@@ -9,7 +9,7 @@ import {
 } from './triangle';
 
 const a: Side = {
-    length: 10
+    length: -10
 }
 
 const b: Side = {
