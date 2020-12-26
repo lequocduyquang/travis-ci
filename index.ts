@@ -43,6 +43,3 @@ export {
     buildTriangle
 }
 
-// const instance: Triangle = buildTriangle(a, b, c);
-// console.log('Type: ', instance.printType());
-// console.log('Perimeter: ', instance.calcPerimeter());

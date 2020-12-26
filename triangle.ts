@@ -1,4 +1,4 @@
-import { Side } from './types';
+import { Side, Response } from './types';
 
 abstract class Triangle  {
     side1: Side;
@@ -31,51 +31,56 @@ abstract class Triangle  {
             * (semiPerimeter - this.side3.length));
 
     };
-    public abstract printType(): object;
+    public abstract printType(): Response;
 } 
 
 class OrdinaryTriange extends Triangle {
     printType() {
-        return {
-            type: '1',
+        const result: Response = {
+            type: 1,
             message: 'Day la tam giac thuong'
-        }
+        } 
+        return result
     }
 }
 
 class IsoscelesTriangle extends Triangle {
     printType() {
-        return {
-            type: '2',
+        const result: Response = {
+            type: 2,
             message: 'Day la tam giac can'
-        }
+        } 
+        return result
     }
 }
 
 class EquilateralTriangle extends Triangle {
     printType() {
-        return {
-            type: '3',
+        const result: Response = {
+            type: 3,
             message: 'Day la tam giac deu'
-        }
+        } 
+        return result
     }
 }
 
 class RightTriangle extends Triangle {
     printType() {
-        return {
-            type: '4',
+        const result: Response = {
+            type: 4,
             message: 'Day la tam giac vuong'
-        }
+        } 
+        return result
     }
 }
 
 class IsoscelesRightTriangle extends Triangle {
     printType() {
-        return {
-            type: '5',
+        const result: Response = {
+            type: 5,
             message: 'Day la tam giac vuong can'
-        }
+        } 
+        return result
     }
 }
 
