@@ -8,18 +8,6 @@ import {
     IsoscelesRightTriangle,
 } from './triangle';
 
-const a: Side = {
-    length: -10
-}
-
-const b: Side = {
-    length: 10
-}
-
-const c: Side = {
-    length: 10
-}
-
 function checkIsosceles(a: Side, b: Side, c: Side) {
     return (a.length === b.length) || (b.length === c.length) || (c.length === a.length);
 }
@@ -51,6 +39,10 @@ function buildTriangle(a: Side, b: Side, c: Side): Triangle {
     }
 }
 
-const instance: Triangle = buildTriangle(a, b, c);
-console.log('Type: ', instance.printType());
-console.log('Perimeter: ', instance.calcPerimeter());
+export {
+    buildTriangle
+}
+
+// const instance: Triangle = buildTriangle(a, b, c);
+// console.log('Type: ', instance.printType());
+// console.log('Perimeter: ', instance.calcPerimeter());
