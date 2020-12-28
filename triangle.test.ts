@@ -59,4 +59,32 @@ describe('Verify type of triangle and calc perimeter', () => {
         expect(instance.printType().type).toEqual(1);
         expect(instance.calcPerimeter()).toEqual(130);
     });
+    test('Test tong 2 canh be hon canh con lai', () => {
+        const a: Side = {
+            length: 30,
+        }
+        const b: Side = {
+            length: 40,
+        }
+        const c: Side = {
+            length: 100,
+        }
+        const instance: Triangle = buildTriangle(a, b, c);
+        expect(instance.printType().type).toEqual(1);
+        expect(instance.calcPerimeter()).toEqual(130);
+    });
+    test('Test so do 1 canh la so am', () => {
+        const a: Side = {
+            length: -30,
+        }
+        const b: Side = {
+            length: 40,
+        }
+        const c: Side = {
+            length: 100,
+        }
+        const instance: Triangle = buildTriangle(a, b, c);
+        expect(instance.printType().type).toEqual(1);
+        expect(instance.calcPerimeter()).toEqual(130);
+    });
 });
